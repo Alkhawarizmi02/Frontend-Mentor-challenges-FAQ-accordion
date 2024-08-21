@@ -7,7 +7,7 @@ function resetAccordions() {
         const icon = question.querySelector('img');
         const accordionAnswer = question.nextElementSibling;
 
-        icon.src = '/assets/images/icon-plus.svg';
+        icon.src = 'assets/images/icon-plus.svg';
         accordionAnswer.classList.remove('toggle');
         question.querySelector('.toggleButton').setAttribute('aria-expanded', 'false');
     });
@@ -22,14 +22,14 @@ function toggleAccordion(accordionQuestion) {
     if (isCurrentlyOpen) {
         // Close the accordion
         accordionAnswer.classList.remove('toggle');
-        icon.src = '/assets/images/icon-plus.svg';
+        icon.src = 'assets/images/icon-plus.svg';
         accordionQuestion.querySelector('.toggleButton').setAttribute('aria-expanded', 'false');
     } else {
         // Open the accordion
         icon.classList.add('fade-out');
 
         icon.addEventListener('transitionend', () => {
-            icon.src = '/assets/images/icon-minus.svg';
+            icon.src = 'assets/images/icon-minus.svg';
             icon.classList.replace('fade-out', 'fade-in');
 
             icon.addEventListener('transitionend', () => {
