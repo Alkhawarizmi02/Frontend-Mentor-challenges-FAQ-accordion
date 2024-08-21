@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Work Sans';
-    src: url('/assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+    src: url('assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('/assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+    src: url('assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('/assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+    src: url('assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -28,7 +28,7 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    background-image: url(/assets/images/background-pattern-mobile.svg);
+    background-image: url(assets/images/background-pattern-mobile.svg);
     background-repeat: no-repeat;
 }
 
@@ -116,7 +116,7 @@ button img {
 
 @media screen and (min-width: 392px) {
     body {
-        background-image: url(/assets/images/background-pattern-desktop.svg);
+        background-image: url(assets/images/background-pattern-desktop.svg);
         background-repeat: repeat-x;
     }
 
