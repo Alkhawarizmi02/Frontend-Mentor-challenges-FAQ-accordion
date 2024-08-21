@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --purple: hsl(280.92deg 82.98% 53.92%);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-image: url(/assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 550px;
+    margin-top: 7rem;
+    margin-inline: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.435);
+}
+
+h1 {
+    display: flex;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+h1 img {
+    width: 1.5rem;
+}
+
+button img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-out {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.fade-in {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.accordions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.accordion:not(:last-child) {
+    margin-bottom: 2rem;
+    border-bottom: 0.15rem solid var(--light-pink);
+}
+
+.accordion-question {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.accordion-question span {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.accordion-question span:is(:hover) {
+    color: var(--purple);
+}
+
+.accordion-question button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.accordion-answer {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 1.5rem;
+    color: transparent;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.accordion-answer.toggle {
+    max-height: 200px;
+    opacity: 1;
+    color: var(--grayish-purple);
+}
+
+@media screen and (min-width: 392px) {
+    body {
+        background-image: url(/assets/images/background-pattern-desktop.svg);
+        background-repeat: repeat-x;
+    }
+
+    .container {
+        margin-inline: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+

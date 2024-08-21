@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ Accordion</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1><img src="/assets/images/icon-star.svg" alt="Star Icon"><span>FAQs</span></h1>
+
+    <div class="accordions">
+      <div class="accordion">
+        <div class="accordion-question">
+          <span>What is Frontend Mentor, and how will it help me?</span>
+          <button class="toggleButton" aria-expanded="false" aria-controls="answer1">
+            <img src="/assets/images/icon-plus.svg" alt="Toggle Icon">
+          </button>
+        </div>
+
+        <div class="accordion-answer" id="answer1">
+          Frontend Mentor is a platform that provides real-world front-end coding challenges. These challenges help you practice and improve your coding skills by building projects that replicate real-world scenarios. You'll work with HTML, CSS, and JavaScript to build projects from designs provided by Frontend Mentor.
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-question">
+          <span>How do I start a challenge on Frontend Mentor?</span>
+          <button class="toggleButton" aria-expanded="false" aria-controls="answer2">
+            <img src="/assets/images/icon-plus.svg" alt="Toggle Icon">
+          </button>
+        </div>
+
+        <div class="accordion-answer" id="answer2">
+          To start a challenge, simply sign up for a free account on Frontend Mentor, browse through the available challenges, and select one that matches your skill level. Download the challenge files, which include design assets and a style guide, and start building the project on your local environment.
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-question">
+          <span>Can I use any technology or framework for the challenges?</span>
+          <button class="toggleButton" aria-expanded="false" aria-controls="answer3">
+            <img src="/assets/images/icon-plus.svg" alt="Toggle Icon">
+          </button>
+        </div>
+
+        <div class="accordion-answer" id="answer3">
+          Yes, you can use any technology or framework you prefer to complete the challenges. While the designs are provided in HTML and CSS, you're free to use frameworks like React, Vue, Angular, or any other tools you’re comfortable with.
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-question">
+          <span>How do I submit my solution to a challenge?</span>
+          <button class="toggleButton" aria-expanded="false" aria-controls="answer4">
+            <img src="/assets/images/icon-plus.svg" alt="Toggle Icon">
+          </button>
+        </div>
+
+        <div class="accordion-answer" id="answer4">
+          After completing a challenge, you can submit your solution by uploading your project to a platform like GitHub and sharing the live URL (if hosted on platforms like GitHub Pages, Netlify, or Vercel). Then, go to the challenge page on Frontend Mentor and submit the GitHub repository link and live URL. This allows others to view your solution and provide feedback.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Attribution -->
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">ayoub</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
